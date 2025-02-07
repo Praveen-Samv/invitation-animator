@@ -19,7 +19,7 @@ export const Invitation = () => {
 
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-30"
+        className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage: "url(https://i.ytimg.com/vi/98ugC5HfjO8/maxresdefault.jpg)",
         }}
