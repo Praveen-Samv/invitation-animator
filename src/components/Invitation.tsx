@@ -21,7 +21,7 @@ export const Invitation = () => {
       <div
         className="absolute inset-0 bg-cover bg-center opacity-30"
         style={{
-          backgroundImage: "url(https://cdn.culture.ru/images/c3e1a58b-73bc-5385-b5b1-0319ab2e22af)",
+          backgroundImage: "url(https://i.ytimg.com/vi/98ugC5HfjO8/maxresdefault.jpg)",
         }}
       />
 
@@ -35,13 +35,13 @@ export const Invitation = () => {
 
           {/* Main Heading */}
           <div className={`text-center mb-8 ${isVisible ? "animate-fade-up" : "opacity-0"}`} style={{ animationDelay: "0.4s" }}>
-            <h1 className="text-2xl md:text-3xl text-primary font-serif mb-4">
+            <h1 className="text-2xl md:text-3xl text-primary font-serif mb-4 hover:text-secondary transition-colors duration-300">
               You're cordially invited to the
             </h1>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl text-primary font-serif font-bold mb-4">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl text-primary font-serif font-bold mb-4 hover:scale-105 transition-transform duration-300">
               Griha Pravesh Ceremony
             </h2>
-            <h3 className="text-xl md:text-2xl text-primary font-serif">
+            <h3 className="text-xl md:text-2xl text-primary font-serif hover:text-secondary transition-colors duration-300">
               & <br />
               Sri LakshmiVenkateshwara <br />
               swamy kalyanam
@@ -49,11 +49,14 @@ export const Invitation = () => {
           </div>
 
           {/* Date and Time */}
-          <div className={`text-center mb-8 ${isVisible ? "animate-fade-up" : "opacity-0"}`} style={{ animationDelay: "0.6s" }}>
-            <p className="text-2xl md:text-3xl text-primary font-bold mb-2">
+          <div 
+            className={`text-center mb-8 ${isVisible ? "animate-fade-up" : "opacity-0"} transform hover:scale-110 transition-all duration-300`} 
+            style={{ animationDelay: "0.6s" }}
+          >
+            <p className="text-2xl md:text-3xl text-primary font-bold mb-2 animate-pulse">
               14 TH FEB, 2025
             </p>
-            <p className="text-xl text-primary">
+            <p className="text-xl text-primary hover:text-secondary transition-colors duration-300">
               5:00 AM ONWARDS
             </p>
           </div>
@@ -84,10 +87,13 @@ export const Invitation = () => {
           </div>
 
           {/* Invited By */}
-          <div className={`text-center ${isVisible ? "animate-fade-up" : "opacity-0"}`} style={{ animationDelay: "1s" }}>
-            <p className="text-lg text-primary italic">
+          <div 
+            className={`text-center ${isVisible ? "animate-fade-up" : "opacity-0"} hover:scale-105 transition-transform duration-300`} 
+            style={{ animationDelay: "1s" }}
+          >
+            <p className="text-lg text-primary italic hover:text-secondary transition-colors duration-300">
               Invited by<br />
-              Purushotham & Umadevi
+              <span className="font-bold">Purushotham & Umadevi</span>
             </p>
           </div>
         </div>
